@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  .js-scroll {
+    will-change: transform;
+  }
+  /* fade-in-effect */
+  /* \\\\\\\\ */
+  .color {
+    color: rgb(249, 185, 12);
+  }
+  
+  .bcg {
+    background-color: darkgray;
+  }
+  
+  .back {
+    background-color: orange;
+  }
+  
+  .wht {
+    color: white;
+  }
+  .blck{
+    color: black;
+  }
+  
+  .backg {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .bodyg{
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: black;
+  }
+  .side-angle {
+    height: 100%;
+    width: 100%;
+    left: 60%;
+    top: 10%;
+    transform: rotate(-75deg);
+    background-color: orange;
+  }
+  
+  .pagess {
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid orange; */
+  }
+  
+  .page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0px 30px;
+  
+    .row .col,
+    .col-12 {
+      height: 75%;
+  
+      @media (max-width: 705px) {
+        width: 65%;
+        height: 50%;
+        margin: auto;
+      }
+    }
+  
+    .prof-pic {
+      box-shadow: 4px 5px 10px, -5px -5px 20px;
+    }
+  }
+  
+  .button {
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(249, 185, 12);
+  
+    .b-span {
+      z-index: 33;
+    }
+  }
+  
+  .button::after {
+    height: 100%;
+    width: 0%;
+    content: "";
+    position: absolute;
+    background-color: rgb(249, 185, 12);
+    z-index: -2;
+    transition: all 0.3s linear;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .button:hover::after {
+    width: 100%;
+  }
+  
+  .buttons {
+    top: 25%;
+    left: 4%;
+    flex-direction: column;
+    .active {
+      background-color: rgb(249, 185, 12);
+    }
+  }
+  /* buttons-for-response */
+  @media (max-width:705px) {
+    .buttons{
+      flex-direction: row;
+      top: 90%;
+      left: 0px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: #343035;
+      backdrop-filter: blur(50px);
+      height: 10%;
+    }
+  }
+  
+  .theme-button{
+    height: 60px;
+    width: 60px;
+    background-color: gray; 
+    top: 2%;
+    left: 4%; 
+  
+  }
+  .buton {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: darkgray;
+    transition: all 0.1s linear;
+  }
+  
+  .buton .icon {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buton .text {
+    display: inline-block;
+    font-size: 20px;
+  }
+  .buton:hover {
+    background-color: rgb(249, 185, 12);
+  }
+  
+  @media (min-width:705px) {
+    .buton:hover {
+      width: 140px;
+      display: flex;
+      align-items: center;
+      background-color: rgb(249, 185, 12);
+    }
+  
+  }
+  
+  
+  /* profile-section */
+  .p-table {
+    min-height: 60vh;
+  
+    table tr td {
+      padding: 15px;
+      border: none;
+      background: transparent;
+    }
+  
+  }
+  
+  .frame {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    margin: auto;
+    color: #fff;
+    font-family: 'montserrat', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headline {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .circle-big {
+    position: relative;
+    width: 114px;
+    height: 114px;
+    margin: 30px auto 25px auto;
+  }
+  
+  .circle-big svg {
+    width: 114px;
+    height: 114px;
+  }
+  
+  .circle-big .bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #343035;
+  }
+  
+  .circle-big .progress {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #daaf14;
+    stroke-linecap: round;
+    stroke-dasharray: 326.56;
+    stroke-dashoffset: 60;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: big 1.5s ease-in-out;
+  }
+  
+  .circle-big .text {
+    position: absolute;
+    width: 100%;
+    top: 37px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  
+  .circle-big .text .small {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .circles-small {
+    margin: 0 auto;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+  }
+  
+  .circle-small {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+  }
+  
+  .circle-small svg {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .circle-small .bg {
+    fill: none;
+    stroke-width: 6px;
+    stroke: #343035;
+  }
+  
+  .circle-small .progress {
+    fill: none;
+    stroke-width: 6px;
+    stroke: #daaf14;
+    stroke-linecap: round;
+    stroke-dasharray: 232.36;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .circle-small .progress.one {
+    stroke-dashoffset: 80;
+    animation: one 2.5s ease-in-out, appear 1s;
+  }
+  
+  .circle-small .progress.two {
+    stroke-dashoffset: 140;
+    animation: two 3.5s ease-in-out, appear 2s;
+  }
+  
+  .circle-small .text {
+    position: absolute;
+    width: 100%;
+    top: 26px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  
+  .circle-small .text .small {
+    font-size: 12px;
+    color: #fff;
+  }
+  
+  @keyframes big {
+    from {
+      stroke-dashoffset: 326.56;
+    }
+  
+    to {
+      stroke-dashoffset: 60;
+    }
+  }
+  
+  @keyframes one {
+    from {
+      stroke-dashoffset: 232.36;
+    }
+  
+    to {
+      stroke-dashoffset: 80;
+    }
+  }
+  
+  @keyframes two {
+    from {
+      stroke-dashoffset: 232.36;
+    }
+  
+    to {
+      stroke-dashoffset: 140;
+    }
+  }
+  
+  @keyframes appear {
+  
+    0%,
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .m-list li {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 20px;
+  }
+  
+  .res-ol {
+    width: 50%;
+  
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  /* portfolio-section */
+  .my-port {
+    width: 100%;
+  }
+  
+  .port-list li {
+    list-style: none;
+  
+    a {
+      color: white;
+      transition: all 0.2s linear;
+    }
+  }
+  
+  .port-list li a:hover {
+    color: #daaf14;
+  }
+  
+  .my-port .row .col-12 {
+    height: 40vh;
+  
+  }
+  
+  .pro-det {
+    top: -60%;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+  
+  .col-12:hover .pro-det {
+    top: 0px;
+    opacity: 1;
+  }
+  
+  .m-body-cont {
+    min-height: 40vh;
+  }
+  
+  .m-b-pic {
+    height: 60vh;
+  }
+  
+  /* contact-body */
+  .contact-body {
+    width: 90%;
+  }
+  
+  .contact-body .row .col-12 {
+    height: 75vh;
+  
+    .contact-det {
+      height: 60%;
+  
+      .con-det {
+        height: 32%;
+  
+        .det-icon {
+          height: 100%;
+          width: 20%;
+        }
+  
+        .det-info {
+          height: 100%;
+          width: 80%;
+        }
+      }
+    }
+  
+    .contact-icons {
+      height: 10%;
+  
+      i {
+        height: 50px;
+        width: 50px;
+        background-color: gray;
+      }
+  
+      i:hover {
+        background-color: #daaf14;
+        color: white;
+      }
+    }
+  }
+  
+  .formm {
+    input {
+      background-color: rgba(49, 49, 49, 0.604);
+    }
+  
+    textarea {
+      background-color: rgba(49, 49, 49, 0.604);
+    }
+  }
+  
+  /* blog-section */
+  .blog-content {
+    min-height: 140vh;
+    min-width: 75%;
+  
+    .row {
+      .col {
+        height: 60vh;
+        margin-top: 15px;
+      }
+    }
+  }
+  
+  .orange-line {
+    height: 2%;
+  }
+  
+  .blog-text {
+    height: 48%;
+    background-color: rgb(22, 22, 22);
+  }
+  .inner-img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s linear;
+  }
+  .zoo:hover .inner-img{
+   transform: scale(1.5,1.5);
+  
+  }
+  .blog-text h4{
+    color: white;
+  }
+  .zoo:hover .blog-text h4{
+    color: #e7ba17;
+  }
+  
