@@ -41,5 +41,3 @@ Feel free to explore my repositories, and I’m always open to collaborations!
 ## 📫 How to Reach Me:
 
 - **Email**: [surjeetyadav80067@gmail.com](mailto:surjeetyadav80067@gmail.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/codersurjeet9389/)
-- **Twitter**: [@YourUsername](https://x.com/Surjeet8728)
